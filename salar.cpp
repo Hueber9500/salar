@@ -88,8 +88,6 @@ void readArraysFromFile(Array& p1, Array& p2)
 
     for(int i = 0; i < 2; i++)
     {
-        //Array** pArr = arr[i];
-        //*pArr = new Array;
         getline(input, line);
         istringstream iss(line);
 
@@ -156,7 +154,7 @@ int main()
     char input;
     cin>>input;
 
-    while(input != 'q' || input != 'Q')
+    while(input != 'q' && input != 'Q')
     {
         switch( input )
         {
